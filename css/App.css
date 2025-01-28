@@ -1,4 +1,8 @@
+body {
+    margin: 0px !important;
+}
+
 .layout {
-    margin-top: 62px;
+    padding-top: 60px;
     min-height: 100vh;
 }
