@@ -25,7 +25,6 @@ function BaseLayout() {
         <Suspense fallback={<div>Loading...</div>}>
         <NavBar />
         <Outlet />
-        <h1>the base layout is working</h1>
         </Suspense>
       </div>
   );
