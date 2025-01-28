@@ -1,5 +1,7 @@
-import React, { lazy } from 'react';
-import { Route, createBrowserRouter, RouterProvider, createRoutesFromElements } from "react-router-dom";
+import React, { lazy, Suspense } from 'react';
+import { Router, Route, createBrowserRouter, RouterProvider, createRoutesFromElements, Outlet } from "react-router-dom";
+import NavBar from './components/NavBar.jsx';
+import '../css/App.css';
 
 const About = lazy(() => import('./screens/About.jsx'));
 const Progress = lazy(() => import('./screens/Progress.jsx'));
@@ -20,7 +22,11 @@ const router = createBrowserRouter(
 function BaseLayout() {
   return (
       <div>
+        <Suspense fallback={<div>Loading...</div>}>
+        <NavBar />
+        <Outlet />
         <h1>the base layout is working</h1>
+        </Suspense>
       </div>
   );
 }

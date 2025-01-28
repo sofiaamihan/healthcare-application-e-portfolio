@@ -1,5 +1,5 @@
 import React from 'react';
-import { Layout } from 'antd';
+import { Layout, Row } from 'antd';
 import { useNavigate } from 'react-router-dom';
 const { Content } = Layout;
 
@@ -8,7 +8,9 @@ export default function About(){
 
     return(
         <Layout className='layout'>
+            <Row>
             <h1>About</h1>
+            </Row>
         </Layout>
     )
 };
