@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
-import { Layout, Row, Menu, theme } from 'antd';
-import { useNavigate } from 'react-router-dom';
+import { Layout, Menu } from 'antd';
 const { Content, Sider } = Layout;
 
 export default function About(){
