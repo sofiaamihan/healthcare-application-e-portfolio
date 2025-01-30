@@ -10,3 +10,22 @@ body {
 .background {
     width: 100vw;
 }
+
+.background-container {
+    position: relative; 
+    overflow: hidden;
+}
+
+.background {
+    width: 100%;
+    object-fit: cover; 
+    background-attachment: fixed;
+}
+
+.title {
+    position: absolute; 
+    top: 40%; 
+    left: 60%; 
+    z-index: 1; 
+    width: 32%;
+}
