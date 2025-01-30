@@ -3,6 +3,7 @@ import { Router, Route, createBrowserRouter, RouterProvider, createRoutesFromEle
 import NavBar from './components/NavBar.jsx';
 import '../css/App.css';
 
+const Home = lazy(() => import('./screens/Home.jsx'));
 const About = lazy(() => import('./screens/About.jsx'));
 const Progress = lazy(() => import('./screens/Progress.jsx'));
 const Prototype = lazy(() => import('./screens/Prototype.jsx'));
@@ -11,6 +12,7 @@ const Summary = lazy(() => import('./screens/Summary.jsx'));
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<BaseLayout />}>
+        <Route index element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="progress" element={<Progress />} />
         <Route path="prototype" element={<Prototype />} />
