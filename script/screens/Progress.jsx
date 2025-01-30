@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import { Layout, Menu } from 'antd';
 const { Content, Sider } = Layout;
+import Collapsables from '../components/Collapsables';
 
 
 export default function Progress(){
@@ -27,7 +28,12 @@ export default function Progress(){
         const renderContent = () => {
             switch (selectedKey) {
                 case '1':
-                    return <div>5W1H</div>;
+                    return(
+                        <div>
+                            <h1>PLANNING  - 5W1H Project Planning Strategy</h1>
+                            <Collapsables />
+                        </div>
+                    );
                 case '2':
                     return <div>Milestone Progress Report + Learning Logs</div>;
                 case '3':
@@ -67,7 +73,8 @@ export default function Progress(){
                     <Content
                         style={{
                         padding: '0 24px',
-                        minHeight: 280,
+                        maxHeight: '60vh',
+                        overflowY: 'auto'
                         }}
                     >
                         {renderContent()}

@@ -49,3 +49,7 @@ p {
     justify-content: center;
     align-self: center;
 }
+
+.content-box {
+    overflow-y: scroll;
+}
