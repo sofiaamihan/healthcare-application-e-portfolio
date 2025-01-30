@@ -29,3 +29,23 @@ body {
     z-index: 1; 
     width: 32%;
 }
+
+h1 {
+    color: #323a33 !important;
+    letter-spacing: 5px !important;
+}
+
+p {
+    color: #323a33 !important;
+    line-height: 40px;
+}
+
+.profile-photo {
+    width: 24vw;
+}
+
+.column {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
