@@ -48,9 +48,19 @@ export default function About(){
                     </div>
                 );
             case '2':
-                return <div>Project Content</div>;
+                return(
+                    <div>
+                        <h1>Project Introduction - Guided Learning (GTP1302)</h1>
+                        <p>{content['project-introduction']}</p>
+                    </div>
+                );
             case '3':
-                return <div>Context Content</div>;
+                return(
+                    <div>
+                        <h1>Project Context - Specific Background Introduction</h1>
+                        <p>{content['project-context']}</p>
+                    </div>
+                );
             case '4':
                 return <div>Proposal Content</div>;
             case '5':
