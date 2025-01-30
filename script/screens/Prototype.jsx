@@ -57,19 +57,24 @@ export default function Prototype(){
                     borderRadius: 24,
                     height: '70vh'
                 }}>
-                    <Sider style={{
+                    <Sider 
+                    style={{
                         background: "#FFFFFF",
                         borderRadius: 16,
-                    }}>
+                    }}
+                    width={260}
+                    >
                         <Menu 
                             defaultSelectedKeys={['1']} 
                             selectedKeys={[selectedKey]} 
                             onClick={handleMenuClick} 
-                            items={items} style={{
+                            items={items} 
+                            style={{
                                 padding:'16px 0px',
                                 background: "#FFFFFF",
                                 borderRadius: 16,
-                        }}/>
+                            }}
+                        />
                     </Sider>
                     <Content
                         style={{
