@@ -1,8 +1,9 @@
 {
   "name": "healthcare-application-e-portfolio",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "script/main.jsx",
   "scripts": {
+    "homepage": "https://sofiaamihan.github.io/healthcare-application-e-portfolio",
     "start": "webpack serve",
     "build": "webpack --mode production",
     "dev": "webpack --watch",
