@@ -8,7 +8,7 @@ export default function Home(){
         <Layout className='layout'>
             <div className="background-container">
                 <img src={background} alt="background" className="background" />
-                <img src={title} alt="title" className="title" />
+                {/* <img src={title} alt="title" className="title" /> */}
             </div>
         </Layout>
     );
