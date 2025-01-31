@@ -108,7 +108,7 @@ module.exports = {
         historyApiFallback: true, // Server index.html for all 404 responses
     },
     performance: {
-        maxAssetSize: 8000000, 
-        maxEntrypointSize: 8000000,
+        maxAssetSize: 10000000, 
+        maxEntrypointSize: 10000000,
     }
 };

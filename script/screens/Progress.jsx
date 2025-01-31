@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import { Layout, Menu } from 'antd';
 const { Content, Sider } = Layout;
 import Collapsables from '../components/Collapsables';
+import Slideshow from '../components/Slideshow';
 
 
 export default function Progress(){
@@ -37,7 +38,13 @@ export default function Progress(){
                 case '2':
                     return <div>Milestone Progress Report + Learning Logs</div>;
                 case '3':
-                    return <div>Proof of study</div>;
+                    return(
+                        <div>
+                            <h1>PERFORMING - Proof Of Study</h1>
+                            <p>Includes Evidence of Planning, Learning, and Storyboarding</p>
+                            <Slideshow />
+                        </div>
+                    );
                 case '4':
                     return <div>Certifications</div>;
                 default:
