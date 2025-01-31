@@ -2,6 +2,10 @@ import React, {useState} from 'react';
 import { Col, Layout, Menu, Row } from 'antd';
 const { Content, Sider } = Layout;
 import curated_notes from '../../public/curated_notes.png';
+import git from '../../public/certifications/git.png';
+import figma from '../../public/certifications/figma.png';
+import kotlin from '../../public/certifications/kotlin.png';
+import compose from '../../public/certifications/compose.png';
 
 export default function Summary(){
     const [selectedKey, setSelectedKey] = useState('1');
@@ -28,7 +32,25 @@ export default function Summary(){
             case '1':
                 return <div>Uno</div>;
             case '2':
-                return <div>Dos</div>;
+                return(
+                    <div>
+                        <h1>Certifications</h1>
+                        <Row>
+                            <Col span={6} className='column'>
+                                <img src={git} alt='git' className='cert'></img>
+                            </Col>
+                            <Col span={6} className='column'>
+                                <img src={figma} alt='figma' className='cert'></img>
+                            </Col>
+                            <Col span={6} className='column'>
+                                <img src={kotlin} alt='kotlin' className='cert'></img>
+                            </Col>
+                            <Col span={6} className='column'>
+                                <img src={compose} alt='compose' className='cert'></img>
+                            </Col>
+                        </Row>
+                    </div>
+                    );
             case '3':
                 return(
                 <div>
