@@ -2,6 +2,8 @@ import React, {useState} from 'react';
 import { Layout, Menu, Row, Col } from 'antd';
 const { Content, Sider } = Layout;
 import profile from '../../public/profile.png';
+import proposal from '../../public/proposal.pdf';
+import learningContract from '../../public/learning_contract.pdf';
 
 const content = {
     "self-introduction": "Hello! My name is Sofia, I\’m a Year 2 Student at Temasek Polytechnic pursuing a Diploma in Information Technology. Unlike many of my peers, I only started coding when I entered Poly. So, with my limited coding experience, I was determined to work my way up, and now I have the opportunity to represent my school in the Mobile Application Development category at WorldSkills Singapore 2025. I created this e-portfolio to document my learning journey, and I hope that any aspiring coders who come across this site feel inspired to pursue their goals, even if it means starting by yourself :)",
@@ -32,6 +34,13 @@ export default function About(){
     };
 
     const renderContent = () => {
+        const [numPages, setNumPages] = useState(null);
+        const [pageNumber, setPageNumber] = useState(1);
+
+        function onDocumentLoadSuccess({ numPages }) {
+            setNumPages(numPages);
+        }
+
         switch (selectedKey) {
             case '1':
                 return(
@@ -62,9 +71,31 @@ export default function About(){
                     </div>
                 );
             case '4':
-                return <div>Proposal Content</div>;
+                return(
+                    <div>
+                        <h1>Submitted Proposal</h1>
+                        <iframe
+                            src={proposal}
+                            width="100%"
+                            height="400px"
+                            title="Proposal Document"
+                            style={{ border: 'none' }}
+                        />
+                    </div>
+                );
             case '5':
-                return <div>Learning Contract Content</div>;
+                return(
+                    <div>
+                        <h1>Learning Contract</h1>
+                        <iframe
+                            src={learningContract}
+                            width="100%"
+                            height="400px"
+                            title="Proposal Document"
+                            style={{ border: 'none' }}
+                        />
+                    </div>
+                );
             default:
                 return <div>Select a tab to see content</div>;
         }
