@@ -3,6 +3,7 @@ import { Layout, Menu } from 'antd';
 const { Content, Sider } = Layout;
 import Collapsables from '../components/Collapsables';
 import Slideshow from '../components/Slideshow';
+import Reflections from '../components/Reflections';
 
 
 export default function Progress(){
@@ -46,7 +47,12 @@ export default function Progress(){
                         </div>
                     );
                 case '4':
-                    return <div>Certifications</div>;
+                    return(
+                        <div>
+                            <h1>REFLECTING - Post-Course Certification Reflections</h1>
+                            <Reflections />
+                        </div>
+                    );
                 default:
                     return <div>Select a tab to see content</div>;
             }

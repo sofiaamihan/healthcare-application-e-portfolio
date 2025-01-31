@@ -2,6 +2,10 @@ body {
     margin: 0px !important;
 }
 
+* {
+    font-family: Calibri, sans-serif;
+}
+
 .layout {
     padding-top: 60px;
     min-height: 100vh;
