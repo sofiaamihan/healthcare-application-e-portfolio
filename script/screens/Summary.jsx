@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
-import { Layout, Menu } from 'antd';
+import { Col, Layout, Menu, Row } from 'antd';
 const { Content, Sider } = Layout;
+import curated_notes from '../../public/curated_notes.png';
 
 export default function Summary(){
     const [selectedKey, setSelectedKey] = useState('1');
@@ -29,7 +30,20 @@ export default function Summary(){
             case '2':
                 return <div>Dos</div>;
             case '3':
-                return <div>Tres</div>;
+                return(
+                <div>
+                    <h1>Curated Notes</h1>
+                    <Row>
+                        <Col span={6}>
+                            <p>After completing this guided learning project, I set up a local online learning system on the Obsidian productivity platform, organising notes on everything I've learned to make it easier to review and memorise before the WorldSkills competition.</p>
+                        </Col>
+                        <Col span={18} className='column'>
+                            <img src={curated_notes} alt='curated-notes' className='curated-notes'></img>
+                        </Col>
+                    </Row>
+                    
+                </div>
+                );
             default:
                 return <div>Select a tab to see content</div>;
         }

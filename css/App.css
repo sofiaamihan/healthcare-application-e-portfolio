@@ -48,6 +48,10 @@ p {
     width: 24vw;
 }
 
+.curated-notes {
+    width: 82%;
+}
+
 .column {
     display: flex;
     justify-content: center;
