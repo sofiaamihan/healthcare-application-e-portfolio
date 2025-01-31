@@ -30,7 +30,12 @@ export default function Summary(){
     const renderContent = () => {
         switch (selectedKey) {
             case '1':
-                return <div>Uno</div>;
+                return(
+                    <div>
+                        <h1>Overall Reflection</h1>
+                        <p>This project has been an enriching experience that has contributed to my technical skills, problem-solving capabilities, and personal growth. When I first started, I had limited coding experiences and a lot of uncertainties ahead. However, through determination and consistency, I have since learnt a lot about Mobile Application Development in Kotlin and Jetpack Compose, which has provided me with a solid foundation in preparation for WorldSkills Singapore 2025. One of the most significant lessons I learned was the importance of adaptability and resilience. I’ve always been so afraid of finding my own solutions to debugging because I’m worried that it will take days and get me nowhere. However, even if it does take a long time, developing an independent understanding is essential in progressing as a programmer. I should not solely rely on the solutions provided by Google, but I should learn how to solve my own problems with my own methods. Overcoming these challenges will help me be more versatile in my area of expertise and help me better navigate complex environments. Likewise, I should remain open-minded in my tools and explore in order to stay relevant in this constantly evolving IT field. I also surprised myself with my persistence in emphasising understanding over memorisation because there were so many instances where I could have given up but I still followed through. I would say that my planning and time management also played a crucial role in balancing this project with my other academic commitments. I am proud of my progress and look forward to representing Temasek Polytechnic at the WorldSkills Singapore 2025 Competition.</p>
+                    </div>
+                );
             case '2':
                 return(
                     <div>
@@ -63,7 +68,6 @@ export default function Summary(){
                             <img src={curated_notes} alt='curated-notes' className='curated-notes'></img>
                         </Col>
                     </Row>
-                    
                 </div>
                 );
             default:
