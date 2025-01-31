@@ -1,9 +1,10 @@
 import React, {useState} from 'react';
-import { Layout, Menu } from 'antd';
+import { Col, Layout, Menu, Row } from 'antd';
 const { Content, Sider } = Layout;
 import Collapsables from '../components/Collapsables';
 import Slideshow from '../components/Slideshow';
 import Reflections from '../components/Reflections';
+import milestoneProgressReport from '../../public/milestone_progress_report.pdf';
 
 
 export default function Progress(){
@@ -18,8 +19,8 @@ export default function Progress(){
     
         const items = [
             getItem('Planning', '1'),
-            getItem('Monitoring', '2'),
-            getItem('Performing', '3'),
+            getItem('Performing', '2'),
+            getItem('Monitoring', '3'),
             getItem('Reflecting', '4'),
         ]
 
@@ -37,8 +38,6 @@ export default function Progress(){
                         </div>
                     );
                 case '2':
-                    return <div>Milestone Progress Report + Learning Logs</div>;
-                case '3':
                     return(
                         <div>
                             <h1>PERFORMING - Proof Of Study</h1>
@@ -46,6 +45,34 @@ export default function Progress(){
                             <Slideshow />
                         </div>
                     );
+                case '3':
+                    return(
+                        <div>
+                            <h1>MONITORING  - Milestone Progress Report + Learning Logs</h1>
+                            <Row>
+                                <Col span={12} className='column'>
+                                    <iframe
+                                        src={milestoneProgressReport}
+                                        width="100%"
+                                        height="400px"
+                                        title="Proposal Document"
+                                        style={{ border: 'none' }}
+                                    />
+                                </Col>
+                                <Col span={12} className='column'>
+                                {/* TODO - THIS IS TEMPORARY, REPLACE WITH LEARNING LOG */}
+                                    <iframe
+                                        src={milestoneProgressReport}
+                                        width="100%"
+                                        height="400px"
+                                        title="Proposal Document"
+                                        style={{ border: 'none' }}
+                                    />
+                                </Col>
+                            </Row>
+                        </div>
+                    );
+                    
                 case '4':
                     return(
                         <div>
