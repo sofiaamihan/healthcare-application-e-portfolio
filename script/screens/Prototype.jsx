@@ -5,46 +5,44 @@ const { Content, Sider } = Layout;
 export default function Prototype(){
     const [selectedKey, setSelectedKey] = useState('1');
         
-        function getItem(label, key) {
-            return {
-              key,
-              label,
-            };
-          }
-    
-        const items = [
-            getItem('Interactive High-Fi Prototype', '1'),
-            getItem('Project Proposal', '2'),
-            getItem('Self-Directed Learning Report', '3'),
-            getItem('Test Report', '4'),
-            getItem('Powerpoint Presentation Slides', '5'),
-            getItem('Final Working Application', '6'),
-        ]
-    
-        const handleMenuClick = (e) => {
-            setSelectedKey(e.key);
+    function getItem(label, key) {
+        return {
+            key,
+            label,
         };
-    
-        const renderContent = () => {
-            switch (selectedKey) {
-                case '1':
-                    return <div>Uno</div>;
-                case '2':
-                    return <div>Dos</div>;
-                case '3':
-                    return <div>Tres</div>;
-                case '4':
-                    return <div>Apat</div>;
-                case '5':
-                    return <div>Lima</div>;
-                case '6':
-                    return <div>6</div>;
-                default:
-                    return <div>Select a tab to see content</div>;
-            }
-        };
+        }
 
-    // TODO - Make the full label seen
+    const items = [
+        getItem('Interactive High-Fi Prototype', '1'),
+        getItem('Project Proposal', '2'),
+        getItem('Self-Directed Learning Report', '3'),
+        getItem('Test Report', '4'),
+        getItem('Powerpoint Presentation Slides', '5'),
+        getItem('Final Working Application', '6'),
+    ]
+
+    const handleMenuClick = (e) => {
+        setSelectedKey(e.key);
+    };
+
+    const renderContent = () => {
+        switch (selectedKey) {
+            case '1':
+                return <div>Uno</div>;
+            case '2':
+                return <div>Dos</div>;
+            case '3':
+                return <div>Tres</div>;
+            case '4':
+                return <div>Apat</div>;
+            case '5':
+                return <div>Lima</div>;
+            case '6':
+                return <div>6</div>;
+            default:
+                return <div>Select a tab to see content</div>;
+        }
+    };
 
     return(
         <Layout className='layout'>
