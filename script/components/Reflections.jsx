@@ -48,7 +48,7 @@ export default function Reflections() {
     return (
         <Collapse defaultActiveKey={['1']} ghost>
             {reflection_items.map(item => (
-                <Collapse.Panel key={item.key} header={<strong>{item.label}</strong>}>
+                <Collapse.Panel key={item.key} header={<span style={{color: '#323a33'}}><strong>{item.label}</strong></span>}>
                     {item.children}
                 </Collapse.Panel>
             ))}
