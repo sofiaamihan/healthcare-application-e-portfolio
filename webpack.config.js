@@ -9,8 +9,7 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'dist'), // Output - Dynamically generated filenames 
         filename: '[name].[contenthash].js',
-        publicPath: '/',
-        // publicPath: '/healthcare-application-e-portfolio/',
+        publicPath: '/healthcare-application-e-portfolio/',
         clean: true,
     },
     module : {
