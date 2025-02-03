@@ -61,7 +61,6 @@ export default function Progress(){
                                     />
                                 </Col>
                                 <Col span={12} className='column'>
-                                {/* TODO - THIS IS TEMPORARY, REPLACE WITH LEARNING LOG */}
                                     <iframe
                                         src={learningLog}
                                         width="100%"

@@ -1,5 +1,5 @@
 import React, { lazy, Suspense } from 'react';
-import { Router, Route, createBrowserRouter, RouterProvider, createRoutesFromElements, Outlet } from "react-router-dom";
+import { Route, createBrowserRouter, RouterProvider, createRoutesFromElements, Outlet } from "react-router-dom";
 import NavBar from './components/NavBar.jsx';
 import '../css/App.css';
 

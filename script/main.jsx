@@ -13,7 +13,6 @@ createRoot(document.getElementById('root')).render(
                 "colorPrimary": "#727d73",
                 "colorInfo": "#727d73",
                 "colorSuccess": "#aab99a",
-                // "colorBgBase": "#D0DDD0"
             },
             "components": {
             "Button": {
