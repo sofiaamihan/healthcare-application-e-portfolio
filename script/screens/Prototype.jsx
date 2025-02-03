@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import { Layout, Menu } from 'antd';
 const { Content, Sider } = Layout;
+import hifi from '../../public/hifi.png';
 
 export default function Prototype(){
     const [selectedKey, setSelectedKey] = useState('1');
@@ -13,7 +14,7 @@ export default function Prototype(){
         }
 
     const items = [
-        getItem('Interactive High-Fi Prototype', '1'),
+        getItem('High-Fidelity Prototype', '1'),
         getItem('Project Proposal', '2'),
         getItem('Self-Directed Learning Report', '3'),
         getItem('Test Report', '4'),
@@ -28,7 +29,12 @@ export default function Prototype(){
     const renderContent = () => {
         switch (selectedKey) {
             case '1':
-                return <div>Uno</div>;
+                return(
+                    <div>
+                        <h1>High-Fidelity Prototype</h1>
+                        <img src={hifi} alt='hi-fi' className='hi-fi'></img>
+                    </div>
+                );
             case '2':
                 return <div>Dos</div>;
             case '3':
@@ -78,6 +84,7 @@ export default function Prototype(){
                         style={{
                         padding: '0 24px',
                         minHeight: 280,
+                        overflowY: 'auto'
                         }}
                     >
                         {renderContent()}

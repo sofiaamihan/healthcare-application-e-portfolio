@@ -65,3 +65,7 @@ p {
 .content-box {
     overflow-y: scroll;
 }
+
+.hi-fi {
+    width: 100%;
+}

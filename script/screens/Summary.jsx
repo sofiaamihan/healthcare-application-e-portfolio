@@ -108,6 +108,7 @@ export default function Summary(){
                         style={{
                         padding: '0 24px',
                         minHeight: 280,
+                        overflowY: 'auto'
                         }}
                     >
                         {renderContent()}

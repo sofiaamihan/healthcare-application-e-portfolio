@@ -9,8 +9,8 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'dist'), // Output - Dynamically generated filenames 
         filename: '[name].[contenthash].js',
-        // filename: 'bundle.js',
-        publicPath: '/healthcare-application-e-portfolio/',
+        // publicPath: '/healthcare-application-e-portfolio/', // Adding this make npx webpack serve not work...
+        // publicPath:'/',
         clean: true,
     },
     module : {
@@ -103,7 +103,7 @@ module.exports = {
     },
     devtool: 'source-map',
     devServer: {
-        port: 5004,
+        port: 5001,
         hot: true,
         open: true,
         historyApiFallback: true, // Server index.html for all 404 responses

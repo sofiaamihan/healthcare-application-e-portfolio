@@ -130,6 +130,7 @@ export default function About(){
                         style={{
                         padding: '0 24px',
                         minHeight: 280,
+                        overflowY: 'auto'
                         }}
                     >
                         {renderContent()}
