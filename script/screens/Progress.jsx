@@ -5,6 +5,7 @@ import Collapsables from '../components/Collapsables';
 import Slideshow from '../components/Slideshow';
 import Reflections from '../components/Reflections';
 import milestoneProgressReport from '../../public/milestone_progress_report.pdf';
+import learningLog from '../../public/log.pdf';
 
 
 export default function Progress(){
@@ -62,7 +63,7 @@ export default function Progress(){
                                 <Col span={12} className='column'>
                                 {/* TODO - THIS IS TEMPORARY, REPLACE WITH LEARNING LOG */}
                                     <iframe
-                                        src={milestoneProgressReport}
+                                        src={learningLog}
                                         width="100%"
                                         height="400px"
                                         title="Proposal Document"
