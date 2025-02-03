@@ -50,13 +50,33 @@ export default function Prototype(){
                     </div>
                 );
             case '3':
-                return <div>Tres</div>;
+                return(
+                    <div>
+                        <h1>Self-Directed Learning Report</h1>
+                        <p>Work in Progress</p>
+                    </div>
+                );
             case '4':
-                return <div>Apat</div>;
+                return(
+                    <div>
+                        <h1>Test Report</h1>
+                        <p>Work in Progress</p>
+                    </div>
+                );
             case '5':
-                return <div>Lima</div>;
+                return(
+                    <div>
+                        <h1>Powerpoint Presentation Slides</h1>
+                        <p>Work in Progress</p>
+                    </div>
+                );
             case '6':
-                return <div>6</div>;
+                return(
+                    <div>
+                        <h1>Final Working Application</h1>
+                        <p>Work in Progress</p>
+                    </div>
+                );
             default:
                 return <div>Select a tab to see content</div>;
         }
