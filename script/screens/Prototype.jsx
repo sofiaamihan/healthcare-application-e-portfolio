@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import { Layout, Menu } from 'antd';
 const { Content, Sider } = Layout;
 import hifi from '../../public/hifi.png';
+import projectProposal from '../../public/project_proposal.pdf';
 
 export default function Prototype(){
     const [selectedKey, setSelectedKey] = useState('1');
@@ -36,7 +37,18 @@ export default function Prototype(){
                     </div>
                 );
             case '2':
-                return <div>Dos</div>;
+                return(
+                    <div>
+                        <h1>Project Proposal</h1>
+                        <iframe
+                            src={projectProposal}
+                            width="100%"
+                            height="400px"
+                            title="Project Proposal"
+                            style={{ border: 'none' }}
+                        />
+                    </div>
+                );
             case '3':
                 return <div>Tres</div>;
             case '4':
