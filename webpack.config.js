@@ -9,20 +9,9 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'dist'), // Output - Dynamically generated filenames 
         filename: '[name].[contenthash].js',
-        // publicPath: '/healthcare-application-e-portfolio/', // Adding this make npx webpack serve not work...
+        publicPath: '/healthcare-application-e-portfolio/', // Adding this make npx webpack serve not work...
         // publicPath:'/',
         clean: true,
-    },
-    module : {
-        rules: [
-            {
-                test: /\.jsx?$/,
-                exclude: /node_modules/,
-                use: {
-                    loader: 'babel-loader'
-                }
-            }
-        ]
     },
     module: {
         rules: [
@@ -81,6 +70,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: './index.html',
             filename: 'index.html',
+            base: '/', 
         })
     ],
     mode: 'production',
