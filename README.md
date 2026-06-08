@@ -5,4 +5,4 @@ A modern portfolio to showcase my Healthcare Application Project and to document
 https://sofiaamihan.github.io/healthcare-application-e-portfolio/
 
 ## Healthcare Application Repository:
-https://github.com/sofiaamihan/full-healthcare-application
+https://github.com/sofiaamihan/healthcare-application
