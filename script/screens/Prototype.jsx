@@ -6,6 +6,7 @@ import projectProposal from '../../public/project_proposal.pdf';
 import sdlReport from '../../public/sdl_report.pdf';
 import testReport from '../../public/test_report.pdf';
 import powerpoint from '../../public/powerpoint.pdf';
+import GitHubRepoCard from '../components/GithubRepoCard';
 
 export default function Prototype(){
     const [selectedKey, setSelectedKey] = useState('1');
@@ -95,7 +96,7 @@ export default function Prototype(){
                 return(
                     <div>
                         <h1>Final Working Application</h1>
-                        <p>Work in Progress</p>
+                        <GitHubRepoCard owner="sofiaamihan" repo="healthcare-application"/>
                     </div>
                 );
             default:
