@@ -71,7 +71,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: './index.html',
             filename: 'index.html',
-            base: '/', 
+            // base: '/', 
         })
     ],
     mode: 'production',
