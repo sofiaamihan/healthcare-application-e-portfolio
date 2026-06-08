@@ -3,6 +3,9 @@ import { Layout, Menu } from 'antd';
 const { Content, Sider } = Layout;
 import hifi from '../../public/hifi.png';
 import projectProposal from '../../public/project_proposal.pdf';
+import sdlReport from '../../public/sdl_report.pdf';
+import testReport from '../../public/test_report.pdf';
+import powerpoint from '../../public/powerpoint.pdf';
 
 export default function Prototype(){
     const [selectedKey, setSelectedKey] = useState('1');
@@ -53,21 +56,39 @@ export default function Prototype(){
                 return(
                     <div>
                         <h1>Self-Directed Learning Report</h1>
-                        <p>Work in Progress</p>
+                        <iframe
+                            src={sdlReport}
+                            width="100%"
+                            height="400px"
+                            title="Self-Directed Learning Report"
+                            style={{ border: 'none' }}
+                        />
                     </div>
                 );
             case '4':
                 return(
                     <div>
                         <h1>Test Report</h1>
-                        <p>Work in Progress</p>
+                        <iframe
+                            src={testReport}
+                            width="100%"
+                            height="400px"
+                            title="Test Report"
+                            style={{ border: 'none' }}
+                        />
                     </div>
                 );
             case '5':
                 return(
                     <div>
                         <h1>Powerpoint Presentation Slides</h1>
-                        <p>Work in Progress</p>
+                        <iframe
+                            src={powerpoint}
+                            width="100%"
+                            height="400px"
+                            title="Powerpoint Presentation Slides"
+                            style={{ border: 'none' }}
+                        />
                     </div>
                 );
             case '6':
